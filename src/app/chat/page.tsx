@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { useChat } from "@/hooks/use-chat";
 import { Send, Bot, User, Loader2, Trash2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export default function ChatPage() {
     const { messages, input, handleInputChange, handleSubmit, resetSession, isLoading } = useChat();
@@ -68,7 +70,15 @@ export default function ChatPage() {
                                             ? "bg-[#0059FF] text-white rounded-tr-none"
                                             : "bg-white text-gray-800 border border-gray-100 rounded-tl-none"
                                     )}>
-                                        {message.content}
+                                        {message.role === "user" ? (
+                                            message.content
+                                        ) : (
+                                            <div className="prose prose-sm max-w-none prose-p:leading-relaxed prose-pre:bg-gray-800 prose-pre:text-gray-100 prose-code:text-[#0059FF] prose-code:bg-blue-50 prose-code:px-1 prose-code:rounded prose-a:text-[#0059FF] prose-a:no-underline hover:prose-a:underline">
+                                                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                                                    {message.content}
+                                                </ReactMarkdown>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
