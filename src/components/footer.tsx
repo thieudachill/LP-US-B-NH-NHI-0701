@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/container";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, LucideIcon } from "lucide-react";
 import Link from "next/link";
 
 const footerLinks = {
@@ -68,7 +68,7 @@ export function Footer() {
     );
 }
 
-function SocialIcon({ icon: Icon }: { icon: any }) {
+function SocialIcon({ icon: Icon }: { icon: LucideIcon }) {
     return (
         <a
             href="#"

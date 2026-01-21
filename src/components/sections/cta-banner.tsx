@@ -25,7 +25,7 @@ export function CTABanner() {
                     >
                         <h2 className="text-3xl font-bold text-gray-900 mb-6 uppercase">Ready to take the next step?</h2>
                         <p className="text-gray-600 mb-8 leading-relaxed">
-                            If you're dealing with ongoing balances or high-interest payments, checking your options could help you understand what's realistically available for your situation.
+                            If you&apos;re dealing with ongoing balances or high-interest payments, checking your options could help you understand what&apos;s realistically available for your situation.
                         </p>
 
                         <div className="flex flex-col gap-4">
@@ -54,6 +54,6 @@ export function CTABanner() {
                     <p>Please note that personal loans should not be treated as financial cure-it-all. If you have major budget difficulties, consult specialists first.</p>
                 </div>
             </Container>
-        </section>
+        </section >
     );
 }
