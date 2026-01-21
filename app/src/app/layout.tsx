@@ -9,7 +9,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "US BÌNH NHI 0701 - Financial Affiliate Agency",
+  title: "US Thiệu AI 0701 - Financial Affiliate Agency",
   description: "Trusted financial solutions and affiliate partnership.",
 };
 

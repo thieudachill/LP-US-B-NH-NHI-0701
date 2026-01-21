@@ -53,8 +53,11 @@ export function Hero() {
                 <Container>
                     <div className="flex items-center justify-center gap-2">
                         {/* Re-using logo.jpg but adding fallback text if it fails */}
-                        <div className="relative w-[180px] h-[50px]">
-                            <Image src="/logo.jpg" alt="US BÌNH NHI 0701" fill className="object-contain object-center" />
+                        <div className="flex items-center gap-3">
+                            <div className="relative w-10 h-10">
+                                <Image src="/logo.svg" alt="Logo" fill className="object-contain" />
+                            </div>
+                            <span className="text-2xl font-bold text-[#054e7d] uppercase" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '1.5rem', lineHeight: '2rem', color: '#054e7d' }}>CHECKDRAW</span>
                         </div>
                     </div>
                 </Container>

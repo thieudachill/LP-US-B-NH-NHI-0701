@@ -20,7 +20,7 @@ export function Footer() {
                                 B
                             </div>
                             <span className="text-xl font-bold text-[var(--color-primary)]">
-                                BÌNH NHI
+                                Thiệu AI
                             </span>
                         </div>
                         <p className="text-[var(--text-body)] text-sm leading-relaxed mb-6 max-w-xs">
@@ -56,7 +56,7 @@ export function Footer() {
 
                 <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-sm text-gray-500">
-                        © 2024 US BÌNH NHI 0701. All rights reserved.
+                        © 2024 US Thiệu AI 0701. All rights reserved.
                     </p>
                     <div className="flex gap-6">
                         <Link href="#" className="text-sm text-gray-400 hover:text-gray-600">Privacy</Link>

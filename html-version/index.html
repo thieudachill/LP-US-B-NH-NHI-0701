@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Thiệu AI 0701 - Financial Affiliate Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0059FF',
+                        secondary: '#0040CC',
+                        success: '#009F00',
+                        body: '#4B5563',
+                        brand: '#054e7d',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased text-gray-900 overflow-x-hidden">
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center pt-32 pb-20 bg-[#F8FAFC]">
+        <!-- Logo Header -->
+        <div class="absolute top-8 left-0 right-0 z-20">
+            <div class="container mx-auto px-4 max-w-[1184px]">
+                <div class="flex items-center justify-center gap-2">
+                    <div class="flex items-center gap-3">
+                        <div class="relative w-10 h-10">
+                            <img src="logo.svg" alt="Logo" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-2xl font-bold text-[#054e7d] uppercase font-montserrat"
+                            style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #054e7d; font-size: 1.5rem; line-height: 2rem;">CHECKDRAW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-[1184px] grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mt-8">
+            <!-- Text Content -->
+            <div class="max-w-[580px] fade-up-hidden">
+                <h1
+                    class="text-[40px] leading-[1.1] md:text-[56px] font-[800] text-[#0B0F19] mb-6 tracking-tight fade-up-hidden stagger-1">
+                    Break Free From <span class="text-[#0059FF]">High-Interest Debt</span> With a Clear, Realistic Plan
+                </h1>
+
+                <p
+                    class="text-[16px] md:text-[18px] text-gray-600 mb-8 leading-relaxed max-w-lg fade-up-hidden stagger-2">
+                    Consolidate multiple debts into one structured monthly payment, potentially reduce interest costs,
+                    and regain control of your finances
+                </p>
+
+                <div class="flex items-start gap-8 mb-8 border-t border-gray-200 pt-6 fade-up-hidden stagger-3">
+                    <div>
+                        <p class="text-[#009F00] font-[800] text-[32px] leading-none mb-1">
+                            $<span class="count-up" data-to="8500">0</span>
+                        </p>
+                        <p class="text-[13px] font-bold text-gray-500 uppercase tracking-wide">Average Savings</p>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div>
+                        <p class="text-[#009F00] font-[800] text-[32px] leading-none mb-1">
+                            <span class="count-up" data-to="4.2" data-decimals="1">0</span>y
+                        </p>
+                        <p class="text-[13px] font-bold text-gray-500 uppercase tracking-wide">Faster payoff</p>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div>
+                        <p class="text-[#009F00] font-[800] text-[32px] leading-none mb-1">
+                            <span class="count-up" data-to="98">0</span>%
+                        </p>
+                        <p class="text-[13px] font-bold text-gray-500 uppercase tracking-wide">Success Rate</p>
+                    </div>
+                </div>
+
+                <div class="fade-up-hidden stagger-4">
+                    <p class="text-[11px] text-gray-400 mb-6 italic">(*) Results vary by profile and eligibility.</p>
+                    <div class="flex gap-4">
+                        <button
+                            class="px-8 h-12 text-lg font-bold bg-[#0059FF] hover:bg-[#0040CC] text-white shadow-xl shadow-blue-500/20 rounded-full transition-all hover:scale-105 active:scale-95 inline-flex items-center justify-center">
+                            Check My Options
+                        </button>
+                        <button
+                            class="px-8 h-12 text-lg font-bold border border-gray-300 bg-transparent text-gray-700 hover:bg-gray-50 rounded-full transition-colors inline-flex items-center justify-center">
+                            Learn More
+                        </button>
+                    </div>
+
+                    <div
+                        class="mt-8 flex items-center gap-4 opacity-80 grayscale hover:grayscale-0 transition-all duration-300">
+                        <div class="h-8 w-auto relative">
+                            <span class="text-xs font-bold text-gray-400 border border-gray-200 px-2 py-1 rounded">A+
+                                BBB RATING</span>
+                        </div>
+                        <div class="h-8 w-auto relative">
+                            <span
+                                class="text-xs font-bold text-gray-400 border border-gray-200 px-2 py-1 rounded">SECURE
+                                SSL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Content -->
+            <div class="relative fade-in-right-hidden">
+                <!-- Decor element -->
+                <div
+                    class="absolute top-10 -right-10 w-[400px] h-[400px] bg-blue-100 rounded-full blur-[80px] opacity-50 pointer-events-none">
+                </div>
+
+                <!-- SavingsForm -->
+                <div
+                    class="bg-white rounded-[2rem] shadow-2xl shadow-blue-900/10 p-8 border border-gray-100 max-w-md mx-auto w-full relative z-10 transition-all duration-300 hover:shadow-blue-900/15">
+                    <div class="mb-6 text-center">
+                        <h3 class="text-[26px] font-bold text-gray-900 leading-tight">Check Your Potential Savings</h3>
+                        <p class="text-gray-400 text-sm mt-1 font-medium">(≈ 60 seconds)</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold text-gray-700 uppercase tracking-widest">Total Debt
+                                Amount</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full h-[50px] pl-4 pr-10 rounded-xl border border-gray-200 appearance-none bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#0059FF] focus:border-transparent text-gray-600 font-medium transition-all cursor-pointer hover:bg-white hover:border-gray-300">
+                                    <option>Select amount</option>
+                                    <option>$10,000 - $20,000</option>
+                                    <option>$20,000 - $50,000</option>
+                                    <option>$50,000+</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold text-gray-700 uppercase tracking-widest">Credit Score
+                                Range</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full h-[50px] pl-4 pr-10 rounded-xl border border-gray-200 appearance-none bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#0059FF] focus:border-transparent text-gray-600 font-medium transition-all cursor-pointer hover:bg-white hover:border-gray-300">
+                                    <option>Select range</option>
+                                    <option>Excellent (720+)</option>
+                                    <option>Good (680-719)</option>
+                                    <option>Fair (640-679)</option>
+                                    <option>Poor (639 or less)</option>
+                                </select>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold text-gray-700 uppercase tracking-widest">Full
+                                name</label>
+                            <input type="text" placeholder="John Smith"
+                                class="w-full h-[50px] px-4 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#0059FF] focus:border-transparent transition-all placeholder:text-gray-400 hover:bg-white hover:border-gray-300" />
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold text-gray-700 uppercase tracking-widest">Email
+                                Address</label>
+                            <input type="email" placeholder="john@example.com"
+                                class="w-full h-[50px] px-4 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#0059FF] focus:border-transparent transition-all placeholder:text-gray-400 hover:bg-white hover:border-gray-300" />
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <label class="text-[11px] font-bold text-gray-700 uppercase tracking-widest">Phone
+                                Number</label>
+                            <input type="tel" placeholder="(503) 486-2846"
+                                class="w-full h-[50px] px-4 rounded-xl border border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#0059FF] focus:border-transparent transition-all placeholder:text-gray-400 hover:bg-white hover:border-gray-300" />
+                        </div>
+
+                        <div class="pt-2">
+                            <p class="text-[11px] text-gray-400 mb-4 leading-relaxed text-center font-medium">
+                                No obligation. Secure & confidential.<br>
+                                Please apply only if you have an active debt consolidation need.
+                            </p>
+                            <button
+                                class="w-full h-[56px] text-lg bg-[#0059FF] hover:bg-[#0040CC] text-white shadow-lg shadow-blue-500/30 rounded-full font-bold tracking-wide transition-all hover:scale-[1.02] active:scale-[0.98] inline-flex items-center justify-center">
+                                Check My Options
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE PROPOSITION -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-[1184px]">
+            <div class="text-center max-w-3xl mx-auto mb-20 fade-up-hidden">
+                <p class="text-primary font-bold text-sm tracking-widest uppercase mb-4">WHY CHOOSE US</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Transform Your Financial Outlook With a
+                    Simpler Structure</h2>
+                <p class="text-gray-500 text-lg">
+                    Join thousands of borrowers who replaced scattered payments with a single, manageable plan.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-[20px] shadow-lg shadow-blue-900/5 border border-gray-100 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group fade-up-hidden stagger-1">
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-[#0059FF] mb-6 group-hover:bg-[#0059FF] group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.78 4.78 4 4 0 0 1-6.74 0 4 4 0 0 1-4.78-4.78 4 4 0 0 1 0-6.74Z" />
+                            <path d="M12 7v10" />
+                            <path d="M8 12h8" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Lower Interest Exposure</h3>
+                    <p class="text-gray-500 leading-relaxed text-[15px]">Reduce the burden of high revolving APRs by
+                        consolidating into a more structured repayment plan.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-[20px] shadow-lg shadow-blue-900/5 border border-gray-100 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group fade-up-hidden stagger-2">
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-[#0059FF] mb-6 group-hover:bg-[#0059FF] group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <path d="M18 17V9" />
+                            <path d="M13 17V5" />
+                            <path d="M8 17v-3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">One Predictable Payment</h3>
+                    <p class="text-gray-500 leading-relaxed text-[15px]">No more juggling multiple due dates. One plan.
+                        One timeline.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-[20px] shadow-lg shadow-blue-900/5 border border-gray-100 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group fade-up-hidden stagger-3">
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-[#0059FF] mb-6 group-hover:bg-[#0059FF] group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Faster Decision Process</h3>
+                    <p class="text-gray-500 leading-relaxed text-[15px]">Most qualified applicants receive matching
+                        options within 24 hours.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-[20px] shadow-lg shadow-blue-900/5 border border-gray-100 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group fade-up-hidden stagger-4">
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-[#0059FF] mb-6 group-hover:bg-[#0059FF] group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                            <polyline points="17 6 23 6 23 12" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Credit-Friendly Over Time</h3>
+                    <p class="text-gray-500 leading-relaxed text-[15px]">Consistent on-time payments may help stabilize
+                        your credit profile.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-[20px] shadow-lg shadow-blue-900/5 border border-gray-100 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group fade-up-hidden stagger-5">
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-[#0059FF] mb-6 group-hover:bg-[#0059FF] group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Flexible Repayment Terms</h3>
+                    <p class="text-gray-500 leading-relaxed text-[15px]">Choose terms that align with your cash flow —
+                        typically 24 to 72 months.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div
+                    class="feature-card bg-white p-8 rounded-[20px] shadow-lg shadow-blue-900/5 border border-gray-100 flex flex-col items-center text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group fade-up-hidden stagger-6">
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-[#0059FF] mb-6 group-hover:bg-[#0059FF] group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="m11 17 2 2a1 1 0 1 0 3-1.42l-2.42-4a2 2 0 0 1 1.4-3.5H19a2 2 0 0 0 1-3.52 3 3 0 0 0-3 3.52H14a5 5 0 0 0-8.24 3.48" />
+                            <path d="m14.56 12.3-4.13-2.39a3 3 0 1 0-2.88 4.88l3.6.83" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Guided Support</h3>
+                    <p class="text-gray-500 leading-relaxed text-[15px]">Clear steps, transparent information, and
+                        assistance throughout the process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS STEPS -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div
+            class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-50/50 via-white to-white pointer-events-none">
+        </div>
+        <div class="container mx-auto px-4 max-w-[1184px] relative z-10">
+            <div class="text-center mb-16 fade-up-hidden">
+                <p class="text-primary font-bold text-sm tracking-widest uppercase mb-4">SIMPLE PROCESS</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">How It Works</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 relative mt-20">
+                <!-- Connecting Line -->
+                <div
+                    class="hidden md:block absolute top-[40px] left-[10%] right-[10%] h-[2px] border-t-2 border-dashed border-blue-200 -z-10">
+                </div>
+
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center group fade-up-hidden stagger-1">
+                    <div
+                        class="w-20 h-20 rounded-full bg-white border-[3px] border-[#0059FF] shadow-lg flex items-center justify-center text-2xl font-bold text-[#0059FF] mb-8 relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#0059FF] group-hover:text-white">
+                        01
+                    </div>
+                    <h3 class="text-[20px] font-bold text-gray-900 mb-4">Apply Online</h3>
+                    <p class="text-gray-500 text-[15px] leading-relaxed px-4">Submit a secure, no-obligation application
+                        to see your potential options.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center group fade-up-hidden stagger-2">
+                    <div
+                        class="w-20 h-20 rounded-full bg-white border-[3px] border-[#0059FF] shadow-lg flex items-center justify-center text-2xl font-bold text-[#0059FF] mb-8 relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#0059FF] group-hover:text-white">
+                        02
+                    </div>
+                    <h3 class="text-[20px] font-bold text-gray-900 mb-4">Get Matched</h3>
+                    <p class="text-gray-500 text-[15px] leading-relaxed px-4">Our system identifies
+                        consolidation-friendly lenders suited to your profile.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center group fade-up-hidden stagger-3">
+                    <div
+                        class="w-20 h-20 rounded-full bg-white border-[3px] border-[#0059FF] shadow-lg flex items-center justify-center text-2xl font-bold text-[#0059FF] mb-8 relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#0059FF] group-hover:text-white">
+                        03
+                    </div>
+                    <h3 class="text-[20px] font-bold text-gray-900 mb-4">Review & Decide</h3>
+                    <p class="text-gray-500 text-[15px] leading-relaxed px-4">Compare approved plans and transparent
+                        terms. Choose what fits your budget.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center group fade-up-hidden stagger-4">
+                    <div
+                        class="w-20 h-20 rounded-full bg-white border-[3px] border-[#0059FF] shadow-lg flex items-center justify-center text-2xl font-bold text-[#0059FF] mb-8 relative z-10 transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#0059FF] group-hover:text-white">
+                        04
+                    </div>
+                    <h3 class="text-[20px] font-bold text-gray-900 mb-4">Start Simplifying</h3>
+                    <p class="text-gray-500 text-[15px] leading-relaxed px-4">Finalize your plan. Your multiple
+                        high-interest balances are replaced by one payment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-[1184px]">
+            <div class="text-center mb-12 fade-up-hidden">
+                <p class="text-primary font-bold text-sm tracking-widest uppercase mb-4">BEFORE vs AFTER</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">See How Consolidation Can Change the Numbers
+                </h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-xl border border-gray-100 fade-up-hidden">
+                <!-- Header -->
+                <div class="grid grid-cols-3 bg-[#F1F5F9] border-b border-gray-200">
+                    <div
+                        class="py-6 px-6 text-left font-bold text-gray-500 text-sm uppercase tracking-wider flex items-center">
+                        Metric</div>
+                    <div
+                        class="py-6 px-6 text-center font-bold text-gray-800 text-lg border-l border-r border-gray-200">
+                        Managing Multiple Debts</div>
+                    <div class="py-6 px-6 text-center font-bold text-[#0059FF] text-lg bg-[#EBF5FF]">One Consolidated
+                        Loan</div>
+                </div>
+
+                <!-- Rows -->
+                <div class="divide-y divide-gray-200">
+                    <div class="grid grid-cols-3 items-stretch group fade-up-hidden stagger-1">
+                        <div
+                            class="py-5 px-6 text-left text-gray-600 font-semibold flex items-center bg-white group-hover:bg-gray-50 transition-colors">
+                            Monthly Payment</div>
+                        <div
+                            class="py-5 px-6 text-center text-gray-500 font-medium flex items-center justify-center bg-white border-l border-r border-gray-200 group-hover:bg-gray-50 transition-colors">
+                            $1,245</div>
+                        <div
+                            class="py-5 px-6 text-center font-bold text-gray-900 flex items-center justify-center bg-[#EBF5FF]">
+                            $485</div>
+                    </div>
+                    <div class="grid grid-cols-3 items-stretch group fade-up-hidden stagger-2">
+                        <div
+                            class="py-5 px-6 text-left text-gray-600 font-semibold flex items-center bg-white group-hover:bg-gray-50 transition-colors">
+                            Interest Rate</div>
+                        <div
+                            class="py-5 px-6 text-center text-gray-500 font-medium flex items-center justify-center bg-white border-l border-r border-gray-200 group-hover:bg-gray-50 transition-colors">
+                            23.4% APR</div>
+                        <div
+                            class="py-5 px-6 text-center font-bold text-gray-900 flex items-center justify-center bg-[#EBF5FF]">
+                            9.8% APR</div>
+                    </div>
+                    <div class="grid grid-cols-3 items-stretch group fade-up-hidden stagger-3">
+                        <div
+                            class="py-5 px-6 text-left text-gray-600 font-semibold flex items-center bg-white group-hover:bg-gray-50 transition-colors">
+                            Payoff Time</div>
+                        <div
+                            class="py-5 px-6 text-center text-gray-500 font-medium flex items-center justify-center bg-white border-l border-r border-gray-200 group-hover:bg-gray-50 transition-colors">
+                            12.5 Years</div>
+                        <div
+                            class="py-5 px-6 text-center font-bold text-gray-900 flex items-center justify-center bg-[#EBF5FF]">
+                            4.2 Years</div>
+                    </div>
+                    <div class="grid grid-cols-3 items-stretch group fade-up-hidden stagger-4">
+                        <div
+                            class="py-5 px-6 text-left text-gray-600 font-semibold flex items-center bg-white group-hover:bg-gray-50 transition-colors">
+                            Total Interest Paid</div>
+                        <div
+                            class="py-5 px-6 text-center text-gray-500 font-medium flex items-center justify-center bg-white border-l border-r border-gray-200 group-hover:bg-gray-50 transition-colors">
+                            $32,840</div>
+                        <div
+                            class="py-5 px-6 text-center font-bold text-gray-900 flex items-center justify-center bg-[#EBF5FF]">
+                            $8,420</div>
+                    </div>
+                    <div class="grid grid-cols-3 items-stretch group fade-up-hidden stagger-5">
+                        <div
+                            class="py-5 px-6 text-left text-gray-600 font-semibold flex items-center bg-white group-hover:bg-gray-50 transition-colors">
+                            Estimated Savings</div>
+                        <div
+                            class="py-5 px-6 text-center text-gray-500 font-medium flex items-center justify-center bg-white border-l border-r border-gray-200 group-hover:bg-gray-50 transition-colors">
+                            —</div>
+                        <div
+                            class="py-5 px-6 text-center font-bold flex items-center justify-center bg-[#EBF5FF] text-[#009F00] text-2xl">
+                            $24,420</div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white text-center border-t border-gray-100">
+                    <p class="text-xs text-gray-400">(*) Example scenario for illustration only. Actual results depend
+                        on eligibility and creditor terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-[1184px]">
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-gray-100 grid md:grid-cols-2 items-center">
+                <!-- Image Side -->
+                <div class="h-full min-h-[400px] bg-gray-200 relative bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop');">
+                    <div class="absolute inset-0 bg-gradient-to-r from-gray-900/40 to-transparent"></div>
+                </div>
+                <!-- Text Side -->
+                <div class="p-12 md:p-16 fade-in-right-hidden">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6 uppercase">Ready to take the next step?</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        If you're dealing with ongoing balances or high-interest payments, checking your options could
+                        help you understand what's realistically available for your situation.
+                    </p>
+
+                    <div class="flex flex-col gap-4">
+                        <button
+                            class="w-full bg-[#0052FF] hover:bg-[#0040CC] h-14 text-lg text-white font-bold rounded-full transition-all hover:scale-[1.02] active:scale-[0.98] inline-flex items-center justify-center">
+                            Check My Options
+                        </button>
+                        <div class="flex items-center gap-2 justify-center text-sm text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-4 h-4">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                            <span>Secure • Confidential • No obligation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Text -->
+            <div class="mt-16 text-xs text-justify text-gray-400 space-y-4 max-w-5xl mx-auto">
+                <p>This is not an offer or solicitation to lend. We do not make any loan or credit decisions and are not
+                    representatives, brokers or agents of any lender. Participating lenders offer loans from $200 up to
+                    $5,000. Not all lenders can offer you amounts up to $5,000. Our service is not available in all
+                    states. Submission of a request through this website does not guarantee that you will receive a loan
+                    offer or an offer you’ll be satisfied with. Funds transfer time may vary depending on your lender
+                    and/or financial institution. If you have any questions about your loan, please contact your lender
+                    directly. Credit checks may be performed with the three reporting credit bureaus: Experian, Equifax,
+                    and TransUnion. Submission of a request means you are authorizing the lenders to check your
+                    creditworthiness and your personal details.</p>
+                <p>This service is not a solicitation for loan products and does not constitute a loan offer for any
+                    loan products that are prohibited by state law. This service is void where prohibited.</p>
+                <p><strong>State Availability:</strong> Not all lenders from our system operate in all US states.
+                    Residents of some US states may not be eligible for loan products in accordance with their
+                    legislation. By selecting your State at the start of our loan offer process, you shall be informed
+                    of any limitations regarding obtaining a loan if you reside in individual US states.</p>
+                <p>This website collects personal information and transfers it to its third-party partners. The website
+                    contains links to third-party websites. Accessing them may result in a commission.</p>
+                <p>Please note that personal loans should not be treated as financial cure-it-all. If you have major
+                    budget difficulties, consult specialists first.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

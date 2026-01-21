@@ -38,7 +38,7 @@ export function Navigation() {
                         B
                     </div>
                     <span className={cn("text-2xl font-bold tracking-tight", isScrolled ? "text-[var(--color-primary)]" : "text-white")}>
-                        BÌNH NHI
+                        Thiệu AI
                     </span>
                 </div>
 
