@@ -45,18 +45,25 @@ export function useChat() {
         setInput(e.target.value);
     };
 
-    const sendMessage = useCallback(async (e?: React.FormEvent) => {
-        if (e) e.preventDefault();
-        if (!input.trim() || isLoading) return;
+    const sendMessage = useCallback(async (e?: React.FormEvent | string) => {
+        let contentToUse = '';
+        if (typeof e === 'string') {
+            contentToUse = e;
+        } else {
+            if (e) e.preventDefault();
+            contentToUse = input;
+        }
+
+        if (!contentToUse.trim() || isLoading) return;
 
         const userMessage: Message = {
             id: generateId(),
             role: 'user',
-            content: input,
+            content: contentToUse,
         };
 
         setMessages((prev) => [...prev, userMessage]);
-        setInput('');
+        if (typeof e !== 'string') setInput('');
         setIsLoading(true);
 
         try {
